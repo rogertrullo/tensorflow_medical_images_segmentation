@@ -1,4 +1,4 @@
-# tensorflow_medical_images_segmentation
+# Medical image segmentation in Tensorflow
 Here I post a code for doing segmentation in medical images using tensorflow.
 First you would need to have the python packages h5py, SimpleITK and of course TensorFlow.
 
