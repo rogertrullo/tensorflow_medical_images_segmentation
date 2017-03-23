@@ -25,20 +25,7 @@ class seg_GAN(object):
     def __init__(self, sess, batch_size=10, height=512,width=512, wd=0.0005, checkpoint_dir=None, path_patients_h5=None, learning_rate=2e-8,lr_step=30000,
                  lam_dice=1, lam_fcn=1, lam_adv=1,adversarial=False):
 
-    
-        """
-        Args:
-            sess: TensorFlow session
-            batch_size: The size of batch. Should be specified before training.
-            output_size: (optional) The resolution in pixels of the images. [64]
-            y_dim: (optional) Dimension of dim for y. [None]
-            z_dim: (optional) Dimension of dim for Z. [100]
-            gf_dim: (optional) Dimension of gen filters in first conv layer. [64]
-            df_dim: (optional) Dimension of discrim filters in first conv layer. [64]
-            gfc_dim: (optional) Dimension of gen units for for fully connected layer. [1024]
-            dfc_dim: (optional) Dimension of discrim units for fully connected layer. [1024]
-            c_dim: (optional) Dimension of image color. For grayscale input, set to 1. [3]
-        """
+
         self.sess = sess
         self.adversarial=adversarial
         self.lam_dice=lam_dice
