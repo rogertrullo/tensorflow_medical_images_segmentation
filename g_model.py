@@ -1,7 +1,7 @@
 """
     @author Roger
 
-    This class implements a 3D FCN for the task of generating CT from MRI
+    This class implements a 2D FCN for the task of segmentation in CT data
 
 """
 
