@@ -18,13 +18,18 @@ Data
 
 The name can be different as long as the CT file and folder are the same.
 
-The first hing that you'd want to do is to convert the CT and it's groundtruth data to h5 format. This is done by the generate_2d_h5.py script. To run it, you should type:
+The first thing that you'd want to do is to convert the CT and it's groundtruth data to h5 format. This is done by the generate_2d_h5.py script. To run it, you should type:
 
-python generate_2d_h5.py --src /path/to/patients --dst /path/to/save/h5/files
+    python generate_2d_h5.py --src /path/to/patients --dst /path/to/save/h5/files
 
 Now this will generate a folder that includes several h5 files that contain the training data (input ct slices and it's corresponding labels).
 
-After that you should be able to run python main.py - dir_patients /path/to/CT_data --path_patients_h5 /path/to/h5files
+After that you should be able to run:
+
+    python main.py --dir_patients /path/to/CT_data --path_patients_h5 /path/to/h5files
+    
+The code has everal options for training and testing that you'll see when you run python main.py
+    
 
 
 
