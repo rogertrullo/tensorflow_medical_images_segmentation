@@ -24,4 +24,8 @@ python generate_2d_h5.py --src /path/to/patients --dst /path/to/save/h5/files
 
 Now this will generate a folder that includes several h5 files that contain the training data (input ct slices and it's corresponding labels).
 
+After that you should be able to run python main.py - dir_patients /path/to/CT_data --path_patients_h5 /path/to/h5files
+
+
+
 
