@@ -4,7 +4,7 @@ First you would need to have the python packages h5py, SimpleITK and of course T
 
 To use it, first I assume that you have niftii files (.nii.gz). Also, I assume that all the training images are in a folder that contains the training subjects as folders in it. Each training subject then will be a folder, and the name of this folder should be the name of the CT image. The groundtruth should be in the same folder and it should be called GT.nii.gz. It should be an image with values for each voxel rangon from 0 to num_classes-1.
 
-Data/
+Data
 |
 |--sub1/
     |--sub1.nii.gz
